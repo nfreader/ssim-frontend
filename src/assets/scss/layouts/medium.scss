@@ -1,0 +1,65 @@
+@use '../inc/colors';
+
+@media screen and (min-width: 30em){
+
+  body {
+    background: colors.$black;
+    color: colors.$maincolor;
+  }
+
+  #game {
+    padding: 10px;
+    display: flex;
+  }
+
+  #content {
+    flex-grow: 1;
+    border: 1px solid colors.$maincolor;
+  }
+
+  section#game_sidebar {
+    width: 40%;
+    border: 1px solid colors.$maincolor;
+    margin-right: 10px;
+  }
+
+  header#game_header {
+    background: colors.$maincolor;
+    color: colors.$black;
+  }
+
+  nav#main_nav {
+    // display: block;
+    flex-direction: column;
+  }
+
+  #sidebar_header {
+    border-bottom: 2px solid colors.$maincolor;
+  }
+
+  .main_nav_item {
+    border: 1px solid colors.$maincolor;
+    margin: 0 0 .1rem 0;
+    text-align: left;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .main_nav_item span {
+    display: inline;
+    font-size: inherit;
+    margin: 0;
+  }
+  .main_nav_item svg {
+    display: inline;
+    font-size: inherit;
+    margin: 0;
+  }
+
+  .main_nav_item:hover {
+    background: colors.$maincolor;
+    color: colors.$black;
+  }
+}

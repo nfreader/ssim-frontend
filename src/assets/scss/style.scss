@@ -1,29 +1,15 @@
-$colours: ( 
-  'olive':#808000
-);
+@use 'inc/colors';
+@use 'layouts/base.scss';
+@use 'layouts/small.scss';
+@use 'layouts/medium.scss';
+@use 'layouts/desktop.scss';
 
-@each $name, $hex in $colours {
-  .#{$name} {
-    color: $hex;
-    &:visited {
-      color: $hex;
-    }
-  }
-  .bg-#{$name} {
-    background-color: $hex;
-  }
-  .b--#{$name} {
-    border-color: $hex;
-  }
-  .hover-bg-#{$name} {
-    &:focus,
-    &:active,
-    &:hover {
-      background-color: $hex;
-    }
-  }
-  .hover-#{$name}:hover,
-  .hover-#{$name}:visited:hover {
-    color: $hex
-  }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 16px/22px 'Fira Code', monospace;;
 }

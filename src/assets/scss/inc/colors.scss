@@ -1,0 +1,67 @@
+$navy:    #002B75;
+$blue:    #0050D4;
+$aqua:    #00D9F7;
+$teal:    #00A6A6;
+$olive:   #00B562;
+$green:   #00D942;
+$lime:    #B4D900;
+$yellow:  #EBCF00;
+$orange:  #EB7700;
+$red:     #EB0012;
+$maroon:  #790009;
+$fuchsia: #FF00C3;
+$purple:  #8D00FF;
+$white:   #FFFFFF;
+$silver:  #777777;
+$gray:    #333333;
+$pda:     #808000;
+$black:   #212121;
+$maincolor: #B4C7FF;
+
+$colors: ( 
+  'navy':    $navy   ,
+  'blue':    $blue   ,
+  'aqua':    $aqua   ,
+  'teal':    $teal   ,
+  'olive':   $olive  ,
+  'green':   $green  ,
+  'lime':    $lime   ,
+  'yellow':  $yellow ,
+  'orange':  $orange ,
+  'red':     $red    ,
+  'maroon':  $maroon ,
+  'fuchsia': $fuchsia,
+  'purple':  $purple ,
+  'white':   $white  ,
+  'silver':  $silver ,
+  'gray':    $gray   ,
+  'pda':     $pda    ,
+  'black':   $black  ,
+  'maincolor': $maincolor
+);
+
+@each $name, $hex in $colors {
+  .#{$name} {
+    color: $hex;
+    &:visited {
+      color: $hex;
+    }
+  }
+  .bg-#{$name} {
+    background-color: $hex;
+  }
+  .b--#{$name} {
+    border-color: $hex;
+  }
+  .hover-bg-#{$name} {
+    &:focus,
+    &:active,
+    &:hover {
+      background-color: $hex;
+    }
+  }
+  .hover-#{$name}:hover,
+  .hover-#{$name}:visited:hover {
+    color: $hex
+  }
+}

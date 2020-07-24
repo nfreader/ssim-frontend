@@ -1,0 +1,8 @@
+@use '../inc/colors';
+
+// Lays out base colors responsively.
+
+body {
+  background: colors.$pda;
+  color: colors.$black;
+}

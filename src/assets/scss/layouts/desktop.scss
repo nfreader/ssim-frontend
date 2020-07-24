@@ -1,0 +1,8 @@
+@use '../inc/colors';
+
+@media screen and (min-width: 60em) {
+  section#game_sidebar {
+    width: 25%;
+  }
+
+}
