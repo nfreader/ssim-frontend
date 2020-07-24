@@ -1,7 +1,7 @@
 <template>
 
   <footer id="game_footer" class="bg-maroon text-red">
-    {{name}} {{ version }}
+    <!-- {{name}} {{ version }} -->
   </footer>
 
 </template>

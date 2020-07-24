@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <Header v-bind:year="year" />
+    <div id="game" class="ph2 pv1">
+      <router-view/>
+    </div>
     <Footer v-bind:name="name" v-bind:version="version" />
-    <router-view/>
   </div>
 </template>
 

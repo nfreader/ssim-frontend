@@ -1,10 +1,11 @@
 <template>
-  <header id="game_header" class="bg-black flex justify-start items-center ph3 bb b--dark-gray">
-    <span class="dib mr3">{{date}}</span>
-    <nav id="globalnav">
+  <header id="game_header" class="ph2 bb b--black f7 f4-ns pv2-ns flex justify-between">
+    <span><i class="fa fa-signal"></i> S.I.M.S.</span>
+    <span>{{date}}</span>
+    <!-- <nav id="globalnav">
       <router-link to="/" class="link dib white hover-black hover-bg-white pa1"><span class="f7 green">sys.</span>Vessel</router-link>
       <router-link to="/navigation" class="link dib white hover-black hover-bg-white pa1"><span class="f7 green">sys.</span>Navigation</router-link>
-    </nav>
+    </nav> -->
   </header>
 </template>
 
