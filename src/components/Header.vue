@@ -1,6 +1,6 @@
 <template>
   <header id="game_header" class="">
-    <span><i class="fa fa-signal"></i> S.I.M.S.</span>
+    <span><i class="fa fa-satellite-dish"></i> S.I.M.S.</span>
     <span id="game_clock">{{date}}</span>
     <!-- <nav id="globalnav">
       <router-link to="/" class="link dib white hover-black hover-bg-white pa1"><span class="f7 green">sys.</span>Vessel</router-link>

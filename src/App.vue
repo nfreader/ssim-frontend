@@ -28,16 +28,19 @@
 // @ is an alias to /src
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
+import Login from '@/components/Login.vue'
 import axios from 'axios'
 
 export default {
   name: 'Home',
   components: {
     Header,
-    Footer
+    Footer,
+    Login
   },
   data: function() {
     return {
+      authenticated: false,
       game_year: '',
       game_name: 'Space Sim',
       game_version: '1.0.0'
@@ -55,11 +58,13 @@ export default {
       });
     },
     getPilot() {
-      axios.get('http://localhost:8000/api/pilot').then(res=> {
-        console.log(res.data)
-      }).catch(err => {
-        console.log(err)
-      });
+      if(this.authenticated){
+        axios.get('http://localhost:8000/api/pilot').then(res=> {
+          console.log(res.data)
+        }).catch(err => {
+          console.log(err)
+        });
+      }
     }
   },
   created() {
